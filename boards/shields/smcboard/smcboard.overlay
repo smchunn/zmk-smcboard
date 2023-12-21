@@ -57,14 +57,14 @@
 			, <&xiao_d 5   (GPIO_ACTIVE_HIGH)>
       ;
 
-			# , <&expander 0 (GPIO_ACTIVE_HIGH)>
-			# , <&expander 1 (GPIO_ACTIVE_HIGH)>
-			# , <&expander 2 (GPIO_ACTIVE_HIGH)>
-			# , <&expander 3 (GPIO_ACTIVE_HIGH)>
-			# , <&expander 5 (GPIO_ACTIVE_HIGH)>
-			# , <&expander 4 (GPIO_ACTIVE_HIGH)>
-			# , <&expander 7 (GPIO_ACTIVE_HIGH)>
-			# , <&expander 6 (GPIO_ACTIVE_HIGH)>
+			// , <&expander 0 (GPIO_ACTIVE_HIGH)>
+			// , <&expander 1 (GPIO_ACTIVE_HIGH)>
+			// , <&expander 2 (GPIO_ACTIVE_HIGH)>
+			// , <&expander 3 (GPIO_ACTIVE_HIGH)>
+			// , <&expander 5 (GPIO_ACTIVE_HIGH)>
+			// , <&expander 4 (GPIO_ACTIVE_HIGH)>
+			// , <&expander 7 (GPIO_ACTIVE_HIGH)>
+			// , <&expander 6 (GPIO_ACTIVE_HIGH)>
 			
 		row-gpios
 			= <&xiao_d 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
