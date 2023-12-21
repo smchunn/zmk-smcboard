@@ -19,4 +19,4 @@
 ---
 include:
   - board: seeeduino_xiao_rp2040
-    shield: tidbit
+    shield: smcboard
