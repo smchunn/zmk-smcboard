@@ -7,6 +7,6 @@ config ZMK_KEYBOARD_NAME
 config SPI
 	default y
 
-config GPIO_MCP23S08
+config GPIO_MCP23SXX
 	default y
 endif
