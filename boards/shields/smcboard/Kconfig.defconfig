@@ -1,0 +1,10 @@
+
+if SHIELD_SMCBOARD_MONO
+
+config ZMK_KEYBOARD_NAME
+    default "smcboard"
+
+config SPI
+	default y
+
+endif
