@@ -4,11 +4,11 @@
 / {
 
 	chosen {
-		zmk,kscan = &kscan;
-		zmk,matrix_transform = &transform;
+		zmk,kscan = &kscan0;
+		zmk,matrix_transform = &default_transform;
 	};
 
-	transform: transform {
+	default_transform: matrix_transform {
 		compatible = "zmk,matrix-transform";
 		rows = <4>;
 		columns = <10>;
@@ -21,7 +21,7 @@
 	>;
 	};
 	
-	kscan: kscan {
+	kscan0: kscan_0 {
 		compatible = "zmk,kscan-gpio-matrix";
 		label = "KSCAN";
 
@@ -33,14 +33,14 @@
 		col-gpios
 			= <&xiao_d 4   (GPIO_ACTIVE_HIGH)>
 			, <&xiao_d 5   (GPIO_ACTIVE_HIGH)>
-			, <&expander 0 (GPIO_ACTIVE_HIGH)>
-			, <&expander 1 (GPIO_ACTIVE_HIGH)>
-			, <&expander 2 (GPIO_ACTIVE_HIGH)>
-			, <&expander 3 (GPIO_ACTIVE_HIGH)>
-			, <&expander 5 (GPIO_ACTIVE_HIGH)>
-			, <&expander 4 (GPIO_ACTIVE_HIGH)>
-			, <&expander 7 (GPIO_ACTIVE_HIGH)>
-			, <&expander 6 (GPIO_ACTIVE_HIGH)>
+			, <&mcp_io 0 (GPIO_ACTIVE_HIGH)>
+			, <&mcp_io 1 (GPIO_ACTIVE_HIGH)>
+			, <&mcp_io 2 (GPIO_ACTIVE_HIGH)>
+			, <&mcp_io 3 (GPIO_ACTIVE_HIGH)>
+			, <&mcp_io 5 (GPIO_ACTIVE_HIGH)>
+			, <&mcp_io 4 (GPIO_ACTIVE_HIGH)>
+			, <&mcp_io 7 (GPIO_ACTIVE_HIGH)>
+			, <&mcp_io 6 (GPIO_ACTIVE_HIGH)>
       ;
 			
 		row-gpios
@@ -56,7 +56,7 @@
 	status = "okay";
 
 	cs-gpios = <&xiao_d 7 GPIO_ACTIVE_LOW>, <&xiao_d 6 GPIO_ACTIVE_HIGH>;
-	expander: mcp23sxx@0 {
+	mcp_io: mcp23sxx@0 {
 		compatible = "microchip,mcp23sxx";
 		status = "okay";
 		gpio-controller;
