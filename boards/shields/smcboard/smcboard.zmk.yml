@@ -4,6 +4,7 @@ name: smcboard
 type: shield
 requires:
   - seeeduino_xiao_rp2040
+  - seeeduino_xiao_ble
 exposes:
   - spi
 url: https://github.com/smchunn/zmk-smcboard
